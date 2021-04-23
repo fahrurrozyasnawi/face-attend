@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
+import { Grid } from '@material-ui/core';
+import Routes from './Routers/Routes';
+import { makeStyles } from '@material-ui/core/styles';
+
+//Nav Drawer
+import Drawer from './Components/Sidebar';
+
+const useStyles = makeStyles({
+  container: {
+    display: 'flex'
+  }
+});
 
 function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Testing
-        </a>
-      </header>
+    <div className={classes.container}>
+      <Router>
+        <Drawer />
+        <Routes />
+      </Router>
     </div>
   );
 }
