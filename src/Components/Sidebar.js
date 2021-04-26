@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { 
     Drawer as MuIDrawer,
     ListItem,
@@ -24,7 +24,7 @@ const useStyles = makeStyles({
     }
 });
 
-function Drawer(props) {
+function Sidebar(props) {
     const { history } = props;
     const classes = useStyles();
     const itemList = [
@@ -65,4 +65,4 @@ function Drawer(props) {
     );
 }
 
-export default Drawer;
+export default Sidebar;
