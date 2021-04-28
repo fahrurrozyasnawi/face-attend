@@ -2,32 +2,26 @@ import React, { Component, useState } from 'react';
 //material-ui
 import {
     Typography,
-    Drawer,
-    Grid,
     AppBar,
     Toolbar,
     Button,
     ClickAwayListener,
     Switch,
     IconButton,
-    FormGroup,
+    Grow,
     MenuItem,
     Menu,
     FormControlLabel,
     Paper,
     Hidden,
-    WithStyles
+    Proppers
 } from '@material-ui/core';
 
 import { makeStyles } from '@material-ui/core/styles';
-import MuiExpansionPanel from '@material-ui/core/ExpansionPanel';
-import MuiExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import MuiExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 
 //material-ui icons
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import MenuIcon from '@material-ui/icons/Menu';
-
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 
